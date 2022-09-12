@@ -25,9 +25,11 @@ public class IntroLabTest {
         assertEquals(expected, actual);
     }
 
-    /* TODO: Write a test case for the method you wrote in IntroLab.
-     *       If done properly, you should be able to run IntroLabTest and see
-     *       the test results.
-     * As a reference, we've included testExampleStudent above.
-     */
+    @Test(timeout = 10)
+    public void testLiuxi484() {
+        String expected = "Hello! My name is Kevin Liu! " +
+                "I like cats more than dogs! Welcome to CSC207!";
+        String actual = IntroLab.liuxi484();
+        assertEquals(expected, actual);
+    }
 }
